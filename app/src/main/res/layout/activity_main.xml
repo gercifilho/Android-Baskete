@@ -1,48 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="br.com.pocomartins.baskete.MainActivity">
 
-    <TextView
-        android:id="@+id/timea"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Time A"
-        android:gravity="center"
-        android:padding="4dp"/>
 
-    <TextView
-        android:id="@+id/placaTimeA"
+    <LinearLayout
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
-        android:gravity="center"
-        android:padding="4dp"/>
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/timea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Time A"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/placaTimeA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:textSize="56sp"
+                android:fontFamily="sans-serif"/>
+
+            <Button
+                android:id="@+id/tresPontosA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+3 pontos" />
+
+            <Button
+                android:id="@+id/doisPontosA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+2 pontos" />
+
+            <Button
+                android:id="@+id/tiroslivresA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Tiro Livre" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/timeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Time B"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/placaTimeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:textSize="56sp"
+                android:fontFamily="sans-serif"/>
+
+            <Button
+                android:id="@+id/tresPontosB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+3 pontos" />
+
+            <Button
+                android:id="@+id/doisPontosB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+2 pontos" />
+
+            <Button
+                android:id="@+id/tiroslivresB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Tiro Livre" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
     <Button
-        android:id="@+id/tresPontosA"
+        android:id="@+id/reiniciar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="+3 pontos"
-        android:layout_margin="8dp"/>
-
-    <Button
-        android:id="@+id/doisPontosA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="+2 pontos"
-        android:layout_margin="8dp"/>
-
-    <Button
-        android:id="@+id/tiroslivresA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tiro Livre"
-        android:layout_margin="8dp"/>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:text="Reiniciar Partida" />
 
 
-</LinearLayout>
+</RelativeLayout>
